@@ -1,0 +1,427 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.text-white {
+    color: #fff !important;
+}
+#main {
+}
+.tour-list .clear {
+  clear: both;
+}
+.member-list .clear{
+    clear: both;/*do sử dụng thuộc tính floatleft không ôm được tất cả*/
+}
+#header {
+  background-color: black;
+  height: 46px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1; /*ảnh chui xuống phần header*/
+}
+#nav .ti-heart,
+#nav .ti-headphone-alt,
+#nav .ti-drupal,
+#nav .ti-pulse,
+#nav .ti-home {
+  color: red;
+  border: 0.2px dashed #f710009c;
+  border-radius: 3px;
+}
+
+#nav {
+  display: block;
+}
+#nav,
+.subnav {
+  list-style-type: none; /*cho mất dấu chấm tròn*/
+}
+#nav > li {
+  display: inline-block;
+}
+#nav li {
+  position: relative;
+}
+#nav > li > a {
+  color: aliceblue;
+  text-transform: uppercase;
+}
+
+#nav li a {
+  text-decoration: none; /*cho đường kẻ ở dưới bỏ gạch chân*/
+  line-height: 46px;
+  padding: 0 24px;
+  display: block;
+}
+#nav li:hover .subnav {
+  display: block;
+}
+
+#nav > li:hover > a {
+  color: black;
+  background-color: aliceblue;
+}
+
+#nav .subnav {
+  min-width: 160px;
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#nav .subnav a {
+  color: black;
+  padding: 0 12px;
+}
+#nav .subnav li:hover a {
+  color: black;
+  background-color: aliceblue;
+}
+#header .search-btn {
+  color: #fff;
+  font-size: 25px;
+  float: right;
+  margin: -41px 10px;
+  line-height: 46px;
+}
+#header .search-btn:hover {
+  cursor: pointer;
+}
+
+#slide {
+  position: relative;
+  padding-top: 50%; /*tỉ lệ chiều cao bức ảnh với chiều ngang*/
+  margin-top: 46px; /*cho xuống dưới phần header*/
+  background: url("/assets/img/slide1.JPG") top center / cover no-repeat;
+}
+#slide .text-content {
+  position: absolute;
+  bottom: 47px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+#slide .text-heading {
+  font-weight: 500;
+  font-size: 25px;
+  color: #57f46b;
+}
+
+#slide .text-description {
+  font-size: 24px;
+  margin-top: 15px;
+}
+
+#content {
+}
+.content-section {
+  width: 800px;
+  padding: 64px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-heading {
+  text-align: center;
+  font-weight: 500; /*Chữ mỏng đi*/
+  letter-spacing: 4px; /*các chữ khoảng cách nhau*/
+  font-size: 30px;
+}
+
+.section-sub {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 25px;
+  font-style: italic;
+}
+.about {
+  font-size: 15px;
+  margin-top: 25px;
+  text-align: justify; /*các khoảng chữ bằng nhau 2 đầu*/
+  line-height: 1.4;
+}
+#content .member-list {
+  margin-top: 45px;
+  
+}
+
+
+#content .member-item {
+  float: left;
+  width: 33.33333%;
+  text-align: center;
+}
+#content .member-name {
+}
+#content .member-img {
+  width: 154px;
+  height: 228px;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+/* tour-section */
+.tour-section{
+    background-color: #000;
+}
+.ticket-list{
+    background-color: #fff;
+    margin-top: 40px;
+}
+.ticket-list li {
+    color: #757575;
+    font-size: 15px;
+    padding: 12px 16px;
+    border-bottom: 1px solid #ccc;
+    list-style-type: none; 
+}
+.sold-out{
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+}
+.sold-end{
+    float: right;
+    background-color: #f44336;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+}
+.tour-list {
+margin-top: 32px;
+margin-left: -8px;
+margin-right: -8px;
+
+}
+
+.list-member {
+float: left;
+width: 33.33333%; 
+padding: 0 8px;
+
+}
+
+.list-img {
+  width: 100%;
+  background-color: #fff;
+  
+}
+.list-img:hover {
+  opacity: 0.7;
+}
+
+.list-member .play-body {
+background-color: #fff;
+padding: 0.15px 16px;
+}
+
+.list-title {
+  padding: 14px 0;
+}
+
+.list-slogan {
+  padding: 14px 0;
+}
+
+.list-content {
+  padding: 14px 0;
+}
+
+.list-button {
+    margin: 15px 0;
+    width: 95px;
+    height: 33px;
+    background-color: black;
+    color: #fff;
+}
+.list-button:hover {
+opacity: 0.7;
+}
+
+.contact {
+  padding: 32px 0;
+}
+
+.contact-left {
+  float: left;
+  padding: 0 0 16px;
+}
+
+.contact-address {
+  padding: 0 0 13px 0;
+}
+
+.contact-phone {
+  padding: 0 0 13px 0;
+}
+
+.contact-email {
+  padding: 0 0 13px 0;
+}
+.ti-crown{
+  padding: 0 14px 0 0
+}
+
+.ti-microphone{
+  padding: 0 14px 0 0
+}
+
+.ti-email{
+  padding: 0 14px 0 0
+}
+
+
+.contact-right {
+  float: right;
+  position: relative;
+ 
+}
+
+.note-name {
+  height: 40px;
+}
+
+.note-email {
+  height: 40px;
+}
+
+.note-message {
+  position: absolute;
+  top: 44px;
+  left: 0px;
+  width: 337px;
+  height: 40px;
+}
+.send{
+  position: absolute;
+  top: 102px;
+  width: 75px;
+  height: 28px;
+  right: 3px;
+  color: #fff;
+  background-color: black;
+}
+.contact-img{
+  margin: 78px 0 0 0;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+}
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.modal-container{
+  background: #fff;
+  width: 900px;
+  max-width: calc(100%-32%);
+  min-height: 200px;
+  position: relative;
+  animation: modalFaceIn ease 0.5s;
+}
+.moder-header{
+  background: #009688;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #fff;
+
+}
+.modal.open {
+  display: flex;
+}
+.moder-header .ti-bag{
+  margin-right: 16px;
+}
+.ti-close {
+  right: 0;
+  position: absolute;
+  padding: 12px;
+  cursor: pointer;
+  opacity: 0.9;
+}
+.modal-body {
+  padding: 16px;
+}
+.modal-label {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+.model-input{
+  border: 1px solid #ccc;
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+#by-tickets {
+  background:#009688 ;
+  border: none;
+  width: 100%;
+  font-size: 15px;
+  text-transform: uppercase;/*cho chữ đậm*/
+  padding: 17px;
+  cursor: pointer;
+}
+#by-tickets:hover{
+  opacity: 0.9;
+}
+.modal-footer {
+padding: 16px;
+float: right ;
+}
+.modal-footer a{
+  color: blue;
+}
+.modal-footer a:hover {
+  opacity: 0.7;
+}
+@keyframes modalFaceIn {
+  form{
+    opacity: 0;
+    transform: rotateY(-140px);
+  }
+
+  to{
+    opacity: 1;
+    transform: translate(0);
+  }
+  
+}
+#footer {
+
+}
+.footer-tuanh {
+  font-size: 17px;
+  padding: 18px;
+  justify-content: center;
+  text-align: center;
+}
+.hihi {
+  text-decoration: none;
+  font-size: 34px;
+  margin-top: 10px;
+  color:violet;
+  
+}
