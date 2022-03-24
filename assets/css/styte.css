@@ -96,10 +96,10 @@ html {
 }
 
  #slide {
-  /*position: relative;
-  /*padding-top: 50%; /*tỉ lệ chiều cao bức ảnh với chiều ngang*/
-  /*margin-top: 46px; /*cho xuống dưới phần header*/
-  /*background: url("/assets/img/slide1.JPG") top center / cover no-repeat;*/
+  position: relative;
+  padding-top: 50%; /*tỉ lệ chiều cao bức ảnh với chiều ngang*/
+  margin-top: 46px; /*cho xuống dưới phần header*/
+  background: url("/assets/img/slide1.JPG") top center / cover no-repeat;
 }
 img.slide-img {
   width: 100%;
